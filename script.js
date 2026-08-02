@@ -1,0 +1,1 @@
+const t=new Date('2026-11-22T18:00:00');setInterval(()=>{let d=t-new Date();if(d<0)return;let s=Math.floor(d/1000),D=Math.floor(s/86400);s%=86400;let H=Math.floor(s/3600);s%=3600;let M=Math.floor(s/60),S=s%60;document.getElementById('countdown').textContent=`${D} días ${H}h ${M}m ${S}s`;},1000);
